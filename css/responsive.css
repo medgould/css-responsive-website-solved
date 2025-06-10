@@ -113,6 +113,15 @@ footer .linked-in:hover {
     width: 45%;
   }
 
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .teammate-data {}
   .teammate-info {
     text-align: center;
     margin-top: 10px;
@@ -127,6 +136,7 @@ footer .linked-in:hover {
     font-size: 14px;
     color: #969696;
   }
+
 
   .teammate-img-wrapper {
    width: 100%;
@@ -191,6 +201,8 @@ footer .linked-in:hover {
   .teammate-info {
     text-align: center;
     margin-top: 10px;
+
+
   }
 
   .teammate-social-icons
