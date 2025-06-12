@@ -233,12 +233,12 @@ body {
   cursor: pointer;
 }
 
-.teammates-list:before {
+.teammates-list:{
   justify-content: flex-start;
   content: "\003C";
 }
 
-.teammates-list:after {
+.teammates-list:{
   justify-content: flex-end;
   content: "\003E";
 }

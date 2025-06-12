@@ -55,7 +55,7 @@ footer .linked-in:hover {
   flex-direction: row;
   flex-wrap: no;
   width: 100%;
-  overflow:auto;;
+  overflow:auto;
 }
 
 
@@ -110,7 +110,8 @@ footer .linked-in:hover {
   .teammate {
     display:flex;
     flex-direction: column; 
-    width: 45%;
+    width: 48%;
+    margin: auto;
   }
 
   .teammate-data {
@@ -121,7 +122,8 @@ footer .linked-in:hover {
     padding: 20px;
     margin-bottom: 20px;
   }
-  .teammate-data {}
+ /* .teammate-data {} */
+
   .teammate-info {
     text-align: center;
     margin-top: 10px;
@@ -149,15 +151,44 @@ footer .linked-in:hover {
   
   }
 
+.facebook span  {
+   display: none;
+}  
+.twitter span  {
+   display: none;
+}
+.instagram span  {
+   display: none;
+}
+
+.linked-in span  {
+   display: none;
 }
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 @media  (max-width: 767px) {
-
-  .top-navigation ul {
-    flex-direction: column;
-    align-items: flex-start;
+  .content h1, .content h2, .content p.subtext {
+    display: flex;
+    padding: 0px 0px;
+    flex-wrap: wrap;
+    width: 100%;
 
   }
+  .section-info{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding:0 0;
+
+  }
+  .section-info h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+
+  }
+
 
   .top-navigation ul li {
     width: auto;
@@ -165,29 +196,47 @@ footer .linked-in:hover {
   }
 
   .portfolio-list {
+    display: flex;
     flex-direction: column;
   
   }
 
   .portfolio-item {
-    flex-direction: row;
+    flex-direction: column;;
     width: 100%;
   }
 
   .portfolio-img-wrapper img {
-    max-width: 100%;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+  }
+   .item-title {
+    display:flex;
+    justify-content: center;
+    width: 100%;
   }
 
+
+  .teammate-list {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100%;
+  }
   .teammates-content {
-    padding-top: 60px;
+    display:flex;
     flex-direction:column;
+    padding: 0 0;
   }
 
   .teammates-list-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-self: center;
+    width: 100%;
+  
   }
 
   .teammate {
@@ -198,9 +247,23 @@ footer .linked-in:hover {
     border: 2px solid black;
 
   }
+
+   .teammate-img-wrapper {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
   .teammate-info {
     text-align: center;
     margin-top: 10px;
+
 
 
   }
@@ -211,4 +274,5 @@ footer .linked-in:hover {
     justify-content: center;
   
   }
+
 }
