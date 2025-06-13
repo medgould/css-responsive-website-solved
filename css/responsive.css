@@ -74,11 +74,11 @@ footer .linked-in:hover {
     padding: 20px;
     background-color:white;
   }
+
    .top-navigation ul {
     display:none;
   }
 
-  
   .ul {
     display:none;
   }
@@ -101,6 +101,9 @@ footer .linked-in:hover {
     flex-direction:column;
 
   }
+  .teammates-list {
+    gap: 0px;
+  }
   .teammates-list-wrapper {
     display: flex;
     flex-direction: row;
@@ -110,7 +113,7 @@ footer .linked-in:hover {
   .teammate {
     display:flex;
     flex-direction: column; 
-    width: 48%;
+    width: 47%;
     margin: auto;
   }
 
@@ -139,30 +142,55 @@ footer .linked-in:hover {
     color: #969696;
   }
 
-
   .teammate-img-wrapper {
    width: 100%;
   }
 
- .teammate-social-icons
-  {
+  .teammate-social-icons {
     display: flex;
     justify-content: center;
   
   }
 
-.facebook span  {
-   display: none;
-}  
-.twitter span  {
-   display: none;
-}
+  .social-icons {
+    gap: 0px;
+    width: 50px;
+  }
+
+  .facebook span  {
+    display: none;
+  }  
+  .twitter span  {
+    display: none;
+  } 
 .instagram span  {
    display: none;
 }
-
 .linked-in span  {
    display: none;
+}
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    flex-wrap:wrap;
+  }
+
+ .address {
+    width: 100%;
+    padding: 20px
+  }
+  .email {
+    width: 100%;
+    padding: 20px
+  }
+  phones {
+    width: 100%;
+    padding: 20px
+  }
 }
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 @media  (max-width: 767px) {
@@ -171,14 +199,13 @@ footer .linked-in:hover {
     padding: 0px 0px;
     flex-wrap: wrap;
     width: 100%;
-
   }
+
   .section-info{
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding:0 0;
-
   }
   .section-info h1 {
     display: flex;
@@ -189,7 +216,6 @@ footer .linked-in:hover {
 
   }
 
-
   .top-navigation ul li {
     width: auto;
     text-align: center;
@@ -198,11 +224,10 @@ footer .linked-in:hover {
   .portfolio-list {
     display: flex;
     flex-direction: column;
-  
   }
 
   .portfolio-item {
-    flex-direction: column;;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -211,17 +236,16 @@ footer .linked-in:hover {
     justify-content: center;
     width: 100%;
   }
+
    .item-title {
     display:flex;
     justify-content: center;
     width: 100%;
   }
 
-
   .teammate-list {
     display: flex;
     flex-direction: column;
-  
     width: 100%;
   }
   .teammates-content {
@@ -236,7 +260,7 @@ footer .linked-in:hover {
     align-items: center;
     justify-self: center;
     width: 100%;
-  
+
   }
 
   .teammate {
@@ -249,7 +273,7 @@ footer .linked-in:hover {
   }
 
    .teammate-img-wrapper {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -258,21 +282,56 @@ footer .linked-in:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 100%;
+    padding: 0px;
   }
   .teammate-info {
     text-align: center;
     margin-top: 10px;
-
-
-
   }
 
   .teammate-social-icons
   {
     display: flex;
+  
     justify-content: center;
   
   }
+  footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+  }
+    .facebook span  {
+    display: block;
+  }  
+  .twitter span  {
+    display: block;
+  } 
+  .instagram span  {
+   display: block;
+  }
+  .linked-in span  {
+   display: block;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .address {
+    width: 100px;
+  }
+  .email {
+    width: 100px;
+  }
+  phones {
+    width: 100px;
+  }
 }
